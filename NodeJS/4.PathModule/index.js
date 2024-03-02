@@ -63,3 +63,15 @@ name: 'index'
 */
 console.log(path.parse(__filename).base);
 console.log(path.parse(__filename).name);
+
+//  isAbsolute() — The path.isAbsolute() method determines if path is an absolute path. If the given path is a zero-
+//  length string, false will be returned.
+//  Syntax:- isAbsolute(path)
+//  Example:
+//  isAbsolute('//server'); // true 
+//  isAbsolute(\\\\server'); // true
+//  isAbsolute('C:/foo/.."); // true
+//  isAbsolute('C:\\foo\\.."); // true
+//  isAbsolute('bar\\baz'); // false
+//  isAbsolute('bar/baz'); // false
+//  isAbsolute('."); // false
