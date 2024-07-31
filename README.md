@@ -13,6 +13,15 @@
 1. Node.js Events
 1. Streams In Node.js
 
+|N.o.|Topic|N.o.|Topic|
+|---|---|---|---|
+|1.|[what-is-nodejs](#what-is-nodejs)|7|[http-module](#http-module-in-depth)|
+|2.|[module-wrapper](#module-wrapper)|8|[routing-in](#routing-in-nodejs)|
+|3.|[path-module](#path-module)|9|[serving-files](#serving-files-in-nodejs)|
+|4.|[fs-module](#fs-module-in-depth)|10|[nodejs-behind](#nodejs-behind-the-scenes)|
+|5.|[os-module](#os-module-in-depth)|11|[nodejs-events](#nodejs-events)|
+|6.|[url-module](#url-module-in-depth)|12|[nodejs-streams](#nodejs-streams)|
+
 - These are the topics covered by Node.js in this article. Let's discuss them one by one.
 
 ### What Is Node.js
@@ -110,8 +119,8 @@ let p4 = "Sairaj"
 export { p1, p2, p3, p4 }
 
 //index.js
-import greet from "./greet.js";
-import { p1, p2, p3, p4 } from "./peoples.js";
+const greetings = require("./greet");
+const { p1, p2, p3, p4 } = require("./peoples");
 
 greet(p1)
 greet(p2)
